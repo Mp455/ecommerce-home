@@ -10,7 +10,7 @@ export function BottomNavigation() {
   return (
     <nav
       className="
-        fixed bottom-0 left-1.5 z-50
+        fixed bottom-0 z-50
         flex h-22 w-full
         items-center justify-around
         border-t border-neutral-200
