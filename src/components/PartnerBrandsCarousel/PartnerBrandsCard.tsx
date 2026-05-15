@@ -9,7 +9,7 @@ export function PartnerBrandsCard({ title, image }: PartnerBrandsCardProps) {
       <img
         src={image}
         alt={title}
-        className="h-53.25 w-[154.52px] object-cover"
+        className="h-53.25 w-full min-w-[154.52px] object-cover"
       />
     </div>
   );

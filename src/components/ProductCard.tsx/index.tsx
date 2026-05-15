@@ -27,7 +27,7 @@ export function ProductCard({
   clubPrice,
   installment,
   buttonName,
-  width = "w-[168.99px]",
+  width = "min-w-[168.99px]",
   height = "h-[335.73px]",
   variant = "default",
 }: ProductCardProps) {
@@ -35,7 +35,7 @@ export function ProductCard({
   const isCustom = variant === "custom";
 
   return (
-    <article className={`rounded-3xl bg-[#FAFAF8] ${width} ${height}`}>
+    <article className={`rounded-3xl bg-[#FAFAF8] w-full ${width} ${height}`}>
       <div className="relative bg-[#F6F6F6] rounded-t-3xl">
         <Badge
           className={`font-semibold  tracking-[2%] leading-[21.1px] absolute 

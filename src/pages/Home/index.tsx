@@ -59,7 +59,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="pl-4">
+        <div className="px-4">
           <ProductsSection
             activeTab={activeCategoryTab}
             filterBy="category"
@@ -86,12 +86,13 @@ export function HomePage() {
             activeIndicatorColor="bg-black"
           />
 
-          <div className="flex justify-center items-center mt-8.5 rounded-3xl">
+          <div className="flex justify-center px-4 items-center mt-8.5 rounded-3xl">
             <img
               src={MizunoSection2}
               alt="Mizuno Section 2"
               width={343}
               height={296}
+              className="w-full"
             />
           </div>
 
@@ -128,12 +129,13 @@ export function HomePage() {
           />
         </div>
 
-        <div className="flex justify-center items-center mt-9.25 rounded-3xl pb-8">
+        <div className="flex justify-center px-4 items-center mt-9.25 rounded-3xl pb-8">
           <img
             src={MizunoSection3}
             alt="Mizuno Section 2"
             width={342}
             height={431}
+            className="w-full"
           />
         </div>
       </main>

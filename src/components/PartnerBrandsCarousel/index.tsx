@@ -10,8 +10,13 @@ import { PartnerBrandsCard } from "./PartnerBrandsCard";
 
 export function PartnerBrandsCarousel() {
   return (
-    <section className="relative px-4 pt-[40.8px]">
-      <Swiper modules={[Navigation]} slidesPerView={2.25} spaceBetween={9}>
+    <section className="relative pt-[40.8px]">
+      <Swiper
+        modules={[Navigation]}
+        slidesPerView={2.25}
+        spaceBetween={9}
+        className="px-4!"
+      >
         {partnerBrands.map((brand) => (
           <SwiperSlide key={brand.id}>
             <PartnerBrandsCard title={brand.fallback} image={brand.image} />

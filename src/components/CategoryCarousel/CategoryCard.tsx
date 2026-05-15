@@ -9,7 +9,7 @@ export function CategoryCard({ title, image }: CategoryCardProps) {
       <img
         src={image}
         alt={title}
-        className="h-59.5 min-w-[163.2px] object-cover"
+        className="h-59.5 w-full min-w-[163.2px] object-cover"
       />
 
       <div className="absolute bottom-4.5 left-3.5">
