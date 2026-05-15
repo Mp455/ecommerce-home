@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --color-primary-red-700: #c1121f;
+  --color-primary-red-900: #9e0c24;
+  --color-primary-black: #000000;
+
+  --color-acento-yellow-400: #c89b2a;
+
+  --color-neutral-gray-100: #f2f2f0;
+  --color-neutral-gray-500: #888888;
+  --color-neutral-gray-700: #555555 --color-text: #1a1a1a;
+}
+
+:root {
+  --swiper-theme-color: var(--color-primary-red-700);
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 999px;
+
+  background: white;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  --swiper-navigation-size: 9.71px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 3px !important;
+  font-weight: bold;
+
+  color: var(--color-primary-red-700);
+  display: none;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-outfit);
+}
