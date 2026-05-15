@@ -39,7 +39,7 @@ export function ProductCard({
       <div className="relative bg-[#F6F6F6] rounded-t-3xl">
         <Badge
           className={`font-semibold  tracking-[2%] leading-[21.1px] absolute 
-               ${isCustom ? "top-3 w-13.5 h-5.25 left-3 text-[14px]" : "top-1.5 w-[40.74px] h-[15.84px] left-2.5 text-[10.56px]"}`}
+               ${isCustom ? "top-4 w-13.5 h-5.25 left-3 text-[14px]" : "top-[12.7px] w-[40.74px] h-[15.84px] left-2.5 text-[10.56px]"}`}
         >
           {discount}
         </Badge>
@@ -47,7 +47,7 @@ export function ProductCard({
         <button
           onClick={() => setWished((prev) => !prev)}
           className={` absolute transition-transform hover:scale-110 
-            ${isCustom ? "top-1.5 right-5 p-1 " : "top-1.5 right-2.5 p-1 "}`}
+            ${isCustom ? "top-4 right-5 p-1 " : "top-[12.7px] right-2.5 p-1 "}`}
           aria-label="Favoritar"
         >
           <svg
@@ -67,14 +67,16 @@ export function ProductCard({
           </svg>
         </button>
 
-        <img
-          src={image}
-          alt={title}
-          className={`h-40 object-contain ${isCustom ? "w-full pt-[49.68px] px-[12.5px]" : "w-full pt-[21.68px] px-[12.5px] "}`}
-        />
+        <div className={`${isCustom ? "pt-[49.68px]" : "pt-1"}`}>
+          <img
+            src={image}
+            alt={title}
+            className={`h-40 object-contain ${isCustom ? "w-full  px-[12.5px]" : "w-full  px-[12.5px] "}`}
+          />
+        </div>
       </div>
 
-      <div className={`px-3 ${isCustom ? "pt-12" : ""}`}>
+      <div className={`px-3 ${isCustom ? "pt-1" : ""}`}>
         <span
           className={` uppercase tracking-[2%] text-neutral-gray-500 ${isCustom ? "text-[12px]" : "text-[10px]"}`}
         >
