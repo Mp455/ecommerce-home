@@ -117,7 +117,7 @@ export function ProductCard({
         </span>
 
         <Button
-          className={`uppercase ${isCustom ? "mt-3" : "mt-2"}`}
+          className={` uppercase ${isCustom ? "mt-3" : "mt-2"}`}
           size={`${isCustom ? "md" : "sm"}`}
         >
           {buttonName}

@@ -44,7 +44,7 @@ const sizes = {
   `,
 
   md: `
-    h-8.5 px-6 w-50
+    h-8.5 px-6 min-w-50 w-full
     leading-4.5 text-[14px] tracking-[2%]
   `,
 
