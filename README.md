@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Teste Técnico - Layout Responsivo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de um teste técnico com foco em construção de interface responsiva utilizando React, TypeScript e Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tecnologias Utilizadas
 
-## React Compiler
+- React
+- TypeScript
+- Tailwind CSS
+- Swiper.js
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Objetivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O objetivo deste projeto foi reproduzir fielmente o layout proposto no Figma, priorizando:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsividade
+- Organização de componentes
+- Reutilização de código
+- Estrutura escalável
+- Fidelidade visual (pixel perfect)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Observações
+
+- Este projeto possui apenas finalidade visual/layout.
+- Não há integração com API ou funcionalidades completas de e-commerce.
+- Os dados utilizados são mocks locais.
+
+---
+
+## Como executar o projeto
+
+Clone o repositório:
+
+```bash
+git clone <url-do-repositorio>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instale as dependências:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## Estrutura
+
+O projeto foi dividido em componentes reutilizáveis para facilitar manutenção e escalabilidade.
+
+### Exemplos de componentes
+
+- Tabs
+- ProductCard
+- ProductsSection
+- Banner
+- Buttons
+- Badges
+
+---
+
+## Responsividade
+
+O layout foi desenvolvido com foco em responsividade para dispositivos mobile.
