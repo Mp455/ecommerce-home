@@ -11,7 +11,7 @@ export function BottomNavigation() {
     <nav
       className="
         fixed bottom-0 z-50
-        flex h-20 w-full
+        flex h-14 w-full
         items-center justify-around
         border-t border-neutral-200
         bg-white
@@ -26,11 +26,11 @@ export function BottomNavigation() {
         <BottomNavigationItem icon={MenuIcon} label="Menu" active />
       </div>
 
-      <div className="mr-2">
+      <div className="mr-2 ">
         <BottomNavigationItem icon={BagIcon} label="Carrinho" active />
       </div>
 
-      <div className="mr-2">
+      <div className="mr-2 ">
         <BottomNavigationItem icon={HeartIcon} label="Favoritos" active />
       </div>
 

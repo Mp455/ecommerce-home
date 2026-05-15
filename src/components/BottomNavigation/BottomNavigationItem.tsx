@@ -17,7 +17,7 @@ export function BottomNavigationItem({
     <button
       className="
         flex flex-col items-center
-        justify-center gap-1 mb-3
+        justify-center gap-1
       "
     >
       <img
